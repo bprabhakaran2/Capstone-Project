@@ -31,17 +31,19 @@ Recovery_ Time_Days - Recovery time average
 ## Project Workflow 
 1. Data load and preprocessing               
 2. Exploratory Data Analysis               
-3. Feature Engineering and Preprocessing                  
-4. Split Train/test                 
-5. Baseline Performance Analysis                  
-6. Class Balancing                    
-7. Simple Model Train - LogisticRegression                 
-8. Classification Model Training on imbalanced and balanced sets: DecisionTree, RandomForest, LightGBM, XGBOOST
-9. Model Performance Comparison
-10. Model Evaluation on test dataset
-11. Cross-validation evaluation
-12. Hyperparameter tuning using RandomizedSearchCV
-13. Model Selection and Feature Importance
+3. Feature Engineering 
+4. Encoding: One-hot categorical, Labelencoder, TFIDFVectorizer for text ,StandardScaler and imputing                
+5. Split Train/test
+6. Data Preprocessing using encoders and MultiLabelBinarizer for target variable           
+7. Baseline Performance Analysis                  
+8. Class Balancing                    
+9. Simple Model Train - LogisticRegression                 
+10. Classification Model Training on imbalanced and balanced sets: DecisionTree, RandomForest, LightGBM, XGBOOST
+11. Model Performance Comparison 
+12. Model Evaluation on test dataset
+13. Cross-validation evaluation
+14. Hyperparameter tuning using RandomizedSearchCV
+15. Model Selection and Feature Importance
 
 ## NoteBooks
 1. dataaugmentation.ipynb : Data extraction and grouping from MIMIC III dataset, augment additional features such as Duration, Adverse_Reactions, Treatment_Effectiveness, Recovery_Time_Days
@@ -56,6 +58,36 @@ Recovery_ Time_Days - Recovery time average
 5. Gender
 6. Diagnosis(ICD Code)
 7. NDC (Prescription Drug code)
+
+## Model Outcomes 
+
+The multi label classification evaluation metrics for balanced and imbalanced datasets both suggest LightGBM as the best model in terms of generalization.
+
+## Model Selection and Evaluation
+ For this multilabel classification problem, the below classification models were evaluated with outcomes below:
+
+ LightGBM:
+
+The evaluation metrics for the trained models — both before and after label balancing — consistently show that LightGBM performs best across key classification metrics:            
+
+Accuracy: LightGBM achieves the highest accuracy, indicating the greatest proportion of correctly predicted instances overall.             
+Precision: It maintains high precision, meaning it generates fewer false positive predictions.                   
+Recall: With recall near 1.0, it successfully captures almost all true positives, minimizing false negatives.                     
+F1 Score: LightGBM also has the highest F1 score, balancing precision and recall effectively. In both the training and test datasets, LightGBM shows strong performance, especially in the Test F1 score, which is a key indicator of generalization.
+
+XGBoost:
+
+Accuracy: XGBoost achieves the good test accuracy, indicating the greatest proportion of correctly predicted instances overall, but lower Test F1.            
+Precision: It maintains high test precision, meaning it generates fewer false positive predictions.           
+Recall: With recall 0.71, the generalization is lower than LightGBM In both the training and test datasets, XGBoost shows fair performance, closer to LightGBM and can be a good model to use for classification.             
+
+RandomForest:
+
+Near perfect train recall but lower test recall indicating overfitting.
+
+Decision Tree:
+
+Weakest amongst trained models with lower metrics scoring overall.
 
 ## Conclusion
 
