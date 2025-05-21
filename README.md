@@ -69,6 +69,7 @@ Recovery_ Time_Days - Recovery time average
 ### Recommendations and Future Work
 1. Utilization of Word2Vec and mapping for clinical notes shortforms in symptoms               
 2. Exploring Graph Neural Network and deep learning for better prediction
+3. Create Web application and deploy     
 
 ## Tech Stack
 
