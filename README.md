@@ -66,14 +66,14 @@ Recovery_ Time_Days - Recovery time average
 3. Key features such as Chronic conditions(wound,carotid,atrial,regurgitation,exacerbation,pancreatitis) , Weight, Height , Gender , BMI , symptoms were selected as top features for most of the labels
 
 ### Recommendations
-1. Utilization of Word2Vec and mapping for clinical notes would yield better prediction
+1. Utilization of Word2Vec and mapping for clinical notes would yield better prediction                
 2. Exploring Graph Neural Network and deep learning would improve recommendation prediction
 
 ## Tech Stack
 
-Python: pandas, NumPy, scikit-learn, SHAP
-Data Visualization: Matplotlib, Seaborn, plotly
-Machine Learning Techniques: Logistic Regression, Decision Trees, Random Forest, LightGBM, XGBoost
-Model Evaluation Metrics: Accuracy, Precision, Recall, F1
-Feature Engineering: One-Hot Encoding,Standard Scaling, Dimensionality Reduction
-Deployment: Joblib, Pickle
+Python: pandas, NumPy, scikit-learn, SHAP             
+Data Visualization: Matplotlib, Seaborn, plotly                    
+Machine Learning Techniques: Logistic Regression, Decision Trees, Random Forest, LightGBM, XGBoost                 
+Model Evaluation Metrics: Accuracy, Precision, Recall, F1                    
+Feature Engineering: One-Hot Encoding,Standard Scaling, Dimensionality Reduction                 
+Deployment: Joblib, Pickle               
