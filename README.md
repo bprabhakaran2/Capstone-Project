@@ -76,5 +76,5 @@ Python: pandas, NumPy, scikit-learn, SHAP
 Data Visualization: Matplotlib, Seaborn, plotly                    
 Machine Learning Techniques: Logistic Regression, Decision Trees, Random Forest, LightGBM, XGBoost                 
 Model Evaluation Metrics: Accuracy, Precision, Recall, F1                    
-Feature Engineering: One-Hot Encoding,Standard Scaling, Vectorization                
+Feature Engineering: One-Hot Encoding,Label Encoding , Standard Scaling, Vectorization                
 Deployment: Joblib, Pickle               
