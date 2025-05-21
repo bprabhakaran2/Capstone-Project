@@ -62,12 +62,13 @@ Recovery_ Time_Days - Recovery time average
 ### Findings
 
 1. Simple regression model did not provide expected outcome , this is expected since this is a mutilabel classification problem
-2. LightGBM outperformed other classification models with better Train and Test F1 score indicating good generalization
-3. Key features such as Chronic conditions(wound,carotid,atrial,regurgitation,exacerbation,pancreatitis) , Weight, Height , Gender , BMI , symptoms were selected as top features for most of the labels
+2. Text columns chronic condition and symptom had several clinical note shorthands that requires mapping to readable words
+3. LightGBM outperformed other classification models with better Train and Test F1 score indicating good generalization
+4. Key features such as Chronic conditions(wound,carotid,atrial,regurgitation,exacerbation,pancreatitis) , Weight, Height , Gender , BMI , symptoms were selected as top features for most of the labels
 
-### Recommendations
-1. Utilization of Word2Vec and mapping for clinical notes would yield better prediction                
-2. Exploring Graph Neural Network and deep learning would improve recommendation prediction
+### Recommendations and Future Work
+1. Utilization of Word2Vec and mapping for clinical notes shortforms in symptoms               
+2. Exploring Graph Neural Network and deep learning for better prediction
 
 ## Tech Stack
 
